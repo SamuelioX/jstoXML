@@ -1,0 +1,49 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Envelope version="01.00">
+	<Sender>
+		<Id/>
+		<Credential>BrassRing will provide</Credential>
+	</Sender>
+	<Recipient>
+		<Id/>
+	</Recipient>
+	<TransactInfo transactType="data">
+		<TransactId>HSCAND636096</TransactId>
+		<TimeStamp>2/28/2011 5:34:34 PM</TimeStamp>
+	</TransactInfo>
+	<Packet>
+		<PacketInfo packetType="data">
+			<PacketId>1</PacketId>
+			<Action>SET</Action>
+			<Manifest>MANIFEST_NAME</Manifest>
+		</PacketInfo>
+		<Payload><![CDATA[<?xml version="1.0"?>
+<CANDIDATE>
+	<CANDIDATEID>984577</CANDIDATEID>
+	<REQUISITIONNUMBER/>
+	<BRREQNUMBER>100BR</BRREQNUMBER>
+	<JOBCODE>09845145447</JOBCODE>
+	<STATUS>03-Offer Accepted</STATUS>
+	<CANDIDATEFIRSTNAME></CANDIDATEFIRSTNAME>	
+	<CANDIDATELASTNAME></CANDIDATELASTNAME>
+	<DATEOFBIRTH>1977-02-15</DATEOFBIRTH>
+	<BIRTHPLACE>Boston</BIRTHPLACE>
+	<COUNTRYOFBIRTH>USA</COUNTRYOFBIRTH>
+	<GENDER>M</GENDER>
+	<MARITALSTATUS>Single</MARITALSTATUS>
+	<NATIONALITY>American</NATIONALITY>
+	<LANGUAGENAME>EN</LANGUAGENAME>
+			<ACTION_REASON>Addition</ACTION_REASON>
+			<ADDITIONAL_COMPENSATION>0</ADDITIONAL_COMPENSATION>
+			<ADDRESS1>4719 Fetteressa Drive</ADDRESS1>
+			<ADDRESS2>none</ADDRESS2>
+	<BASE_SALARY_FREQUENCY>H</BASE_SALARY_FREQUENCY>
+			<SALARY_GRADE>OL6</SALARY_GRADE>
+	<SIGN_ON_BONUS_AMOUNT>0</SIGN_ON_BONUS_AMOUNT>
+			<ETHNIC_GROUP>White</ETHNIC_GROUP>
+	<HIRE_DT>2012-04-23</HIRE_DT>
+	</CANDIDATE>
+]]></Payload>
+	</Packet>
+</Envelope>
