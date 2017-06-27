@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <title>Kenexa Test</title>
+        <script>
+//            (function () {
+//                var cors_api_host = 'cors-anywhere.herokuapp.com';
+//                var cors_api_url = 'https://' + cors_api_host + '/';
+//                var slice = [].slice;
+//                var origin = window.location.protocol + '//' + window.location.host;
+//                var open = XMLHttpRequest.prototype.open;
+//                XMLHttpRequest.prototype.open = function () {
+//                    var args = slice.call(arguments);
+//                    var targetOrigin = /^https?:\/\/([^\/]+)/i.exec(args[1]);
+//                    if (targetOrigin && targetOrigin[0].toLowerCase() !== origin &&
+//                            targetOrigin[1] !== cors_api_host) {
+//                        args[1] = cors_api_url + args[1];
+//                    }
+//                    return open.apply(this, args);
+//                };
+//            })();
+            var inputXma = '<?xml version="1.0"?><Envelope version="01.00"><Sender><Id>API55555</Id><Credential>25779</Credential></Sender><Recipient><Id/></Recipient><TransactInfo transactType="data"><transactId></transactId><timeStamp></timeStamp></TransactInfo><Packet><PacketInfo packetType="data"><PacketId>1</PacketId><Action/><Manifest/><PacketCode/></PacketInfo><Payload><ResultSet><![CDATA[<Field qid="123"><Name></Name><Type></Type><Options><Option><Code></Code><Description></Description></Option></Options></Field>]]></ResultSet></Payload></Packet></Envelope>';
+            var url = 'http://stagingimport.brassring.com/WebRouter/WebRouter.asmx/route';
+            $(document).ready(function () {
+                $.post(url, {inputXml: inputXma})
+                        .done(function (data) {
+                            alert("Data Loaded: " + data);
+                            console.log(data);
+                            //var content = $( data ).find( "#content" );
+                            $("#content").empty().append((new XMLSerializer()).serializeToString(data));
+
+                        });
+            });
+
+        </script>
+
+    </head>
+
+
+    <body>
+        <div id="content">temp will change</div>
+    </body>
+</html>
